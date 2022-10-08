@@ -1,0 +1,31 @@
+<!-- ===== HEADER SECTION ===== -->
+<div align=center>
+  <h3>The Algorithms</h3>
+  
+  <!-- ===== SHIELDS SECTION ===== -->
+  <img alt="c" src="https://img.shields.io/badge/C-11-informational">
+  <img alt="C++" src="https://img.shields.io/badge/C%2B%2B-11-9cf">
+  <img alt="Python" src="https://img.shields.io/badge/python-3.10-yellowgreen">
+  <img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/cheenathana/the_algorithms">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/cheenathana/the_algorithms">
+  
+  <hr>
+</div>
+
+- <b>ARRAY</b>
+  - [x] [Two number sum](https://github.com/cheenathana/the_algorithms/tree/main/two_number_sum)
+  - [ ] Three number sum
+  - [ ] Smallest difference
+  - [ ] Move elements to end
+  - [ ] Monotonic array
+  - [ ] Spiral traverse
+  - [ ] Longest peak
+  - [ ] Four number sum
+  - [ ] Sort sub-array
+  - [ ] Largest range
+  - [ ] Minimum rewards
+  - [ ] Zigzag tranverse
+  - [ ] Apartment hunting
+  - [ ] Calendar matching
+ 
+- <b>BINARY SEARCH TREE</b>
