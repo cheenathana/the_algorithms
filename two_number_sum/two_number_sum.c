@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int compare_val(const void* x, const void* y) {
-   // Makeing the pointer to int pointer
+   // Casting void pointer to int and getting the value
    int element1 = *((int*)x);
    int element2 = *((int*)y);
 
@@ -16,8 +16,8 @@ int compare_val(const void* x, const void* y) {
 }
 
 
-
 void two_number_sum(int arr[], int size, int targetsum, int out[]) {
+   // Setting pointer var with array's positions
    int lptr = 0;
    int rptr = size - 1;
 
@@ -36,6 +36,8 @@ void two_number_sum(int arr[], int size, int targetsum, int out[]) {
          lptr += 1;
    }
 }
+
+
 
 
 /* EXECUTION BEGINS HERE */

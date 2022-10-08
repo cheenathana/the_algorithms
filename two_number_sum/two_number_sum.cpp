@@ -5,7 +5,9 @@
 
 using namespace std;
 
+/* APPROACH I */
 void two_number_sum_using_map(vector<int>& arr, int targetsum, vector<int>& out) {
+   // Empty hashtable to hold the arr elements
    map<int, bool> tmp;
 
    for (auto i: arr) {
@@ -16,31 +18,37 @@ void two_number_sum_using_map(vector<int>& arr, int targetsum, vector<int>& out)
          out.push_back(i);
       }
       else
+         // If the value never contributes to target sum, then add it to hashtable
          tmp.insert(pair<int, bool>(i, true));
    }
 }
 
 
+/* APPROACH II */
 void two_number_sum(vector<int>& arr, int targetsum, vector<int>& out) {
-   // sort the array in increasing order
+   // sort the array in ascending order
    sort(arr.begin(), arr.end());
 
    int lptr = 0;
    int rptr = arr.size() - 1;
 
    while (1) {
-      if (arr[lptr] + arr[rptr] == targetsum) {
+      int current_sum = arr[lptr] + arr[rptr];
+
+      if (current_sum == targetsum) {
          out.push_back(arr[lptr]);
          out.push_back(arr[rptr]);
          break;
       }
 
-      if (arr[lptr] + arr[rptr] > targetsum)
+      // Moving the pointer based on comparing current_sum and targetsum
+      if (current_sum > targetsum)
          rptr -= 1;
       else
          lptr += 1;
    }
 }
+
 
 
 /* Execution begins here */

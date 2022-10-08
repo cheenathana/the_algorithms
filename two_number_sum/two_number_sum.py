@@ -1,7 +1,15 @@
 
 def two_number_sum_with_hashtable(arr, targetsum):
     """
-    APPROCH I
+    INPUTS:
+    arr = [3, 5, 22, 8, 11, 1, -1]
+    targetsum = 10
+
+    OUTPUTS:
+    [11, -1]
+    List containing number pair with adds up to targetsum
+
+    APPROACH I
     =========
     - Create a empty hashtable
     - Loop through the array
@@ -24,9 +32,10 @@ def two_number_sum_with_hashtable(arr, targetsum):
             hashtable[i] = True
 
 
+
 def two_number_sum(arr, targetsum):
     """
-    APPROCH II:
+    APPROACH II:
     ===========
     - Sort the array
     - Place two variable to point values from left and right
@@ -39,8 +48,10 @@ def two_number_sum(arr, targetsum):
     Time complexity : O(log N) + O(N) 
     Space complexity: O(1)              we are not occupying any space
     """
+    # sorting array by ascending order
     arr.sort()
 
+    # setup pointer var with the positional values
     lptr = 0
     rptr = -1
 
