@@ -14,7 +14,7 @@
 
 - <b>ARRAY</b>
   - [x] [Two number sum](https://github.com/cheenathana/the_algorithms/tree/main/two_number_sum)
-  - [ ] Three number sum
+  - [x] [Three number sum](https://github.com/cheenathana/the_algorithms/tree/main/three_number_sum)
   - [ ] Smallest difference
   - [ ] Move elements to end
   - [ ] Monotonic array
