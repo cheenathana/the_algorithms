@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -21,6 +22,9 @@ void two_number_sum_using_map(vector<int>& arr, int targetsum, vector<int>& out)
 
 
 void two_number_sum(vector<int>& arr, int targetsum, vector<int>& out) {
+   // sort the array in increasing order
+   sort(arr.begin(), arr.end());
+
    int lptr = 0;
    int rptr = arr.size() - 1;
 
@@ -43,7 +47,7 @@ void two_number_sum(vector<int>& arr, int targetsum, vector<int>& out) {
 int main() {
    vector<int> out1;
    vector<int> out2;
-   vector<int> arr = {3, 5, -1, 8, 11, 1, -1};
+   vector<int> arr = {3, 5, 300, 8, 11, 1, -1};
    int targetsum = 10;
 
    two_number_sum_using_map(arr, targetsum, out1);

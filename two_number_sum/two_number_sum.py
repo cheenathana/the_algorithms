@@ -39,6 +39,8 @@ def two_number_sum(arr, targetsum):
     Time complexity : O(log N) + O(N) 
     Space complexity: O(1)              we are not occupying any space
     """
+    arr.sort()
+
     lptr = 0
     rptr = -1
 
@@ -56,7 +58,7 @@ def two_number_sum(arr, targetsum):
 
 
 if __name__ == "__main__":
-    arr = [3, 5, -1, 8, 11, 1, -1]
+    arr = [3, 5, 22, 8, 11, 1, -1]
     targetsum = 10
 
     print(two_number_sum_with_hashtable(arr, targetsum))
