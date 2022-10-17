@@ -1,25 +1,5 @@
-
+# WAY 01
 def two_number_sum_with_hashtable(arr, targetsum):
-    """
-    INPUTS:
-    arr = [3, 5, 22, 8, 11, 1, -1]
-    targetsum = 10
-
-    OUTPUTS:
-    [11, -1]
-    List containing number pair with adds up to targetsum
-
-    APPROACH I
-    =========
-    - Create a empty hashtable
-    - Loop through the array
-    - If (x - arr[0]) in hashtable, then return arr[0] and hashtable_value
-    - If the x - arr[0] not in hashtable, then add the arr[0] to hash table
-    - Continue with the next element
-
-    Time complexity : O(N)
-    Space complexity: O(N)
-    """
     # Empty dict to hold the number whose value not contibutes the total
     hashtable = {}
 
@@ -32,26 +12,12 @@ def two_number_sum_with_hashtable(arr, targetsum):
             hashtable[i] = True
 
 
-
+# WAY 02
 def two_number_sum(arr, targetsum):
-    """
-    APPROACH II:
-    ===========
-    - Sort the array
-    - Place two variable to point values from left and right
-    - add the value pointed by left and right and check if its equal to x
-    - if left+right == targetsum, then return it and quit
-    - if left+right > targetsum, then move the right pointer toward left
-    - if left+right < targetsum, then move the left pointer toward right
-    - Continue this until both value adds to x
-
-    Time complexity : O(log N) + O(N) 
-    Space complexity: O(1)              we are not occupying any space
-    """
-    # sorting array by ascending order
+    # sort array by ascending order
     arr.sort()
 
-    # setup pointer var with the positional values
+    # var to point elements in the array
     lptr = 0
     rptr = -1
 
@@ -68,6 +34,7 @@ def two_number_sum(arr, targetsum):
 
 
 
+# Execution begins here
 if __name__ == "__main__":
     arr = [3, 5, 22, 8, 11, 1, -1]
     targetsum = 10
