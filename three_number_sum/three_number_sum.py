@@ -1,28 +1,4 @@
 def three_number_sum(arr, targetsum):
-    """
-    Inputs:
-    arr = [12, 3, 1, 2, -6, 5, -8, 6]
-    targetsum = 0
-
-    Output:
-    All possible three number combination which adds to the target sum value
-    [[-8, 2, 6], [-8, 3,5], [-6, 1, 5]]
-
-    APPROACH:
-    - Sort the array
-    - Use two loop. first loop to pick each element
-    - Second loop 
-       - use two variable to point to left & right values
-       - at each iteration check firstloop_var + right_val + left_val
-       - if all adds to targetsum, add to output list and move both the pointer position
-       - if add_value > targetsum, move the right_pointer towards left
-       - if add_value < targetsum, move the left_pointer towards right
-       - Left position should always lower than right position to avoid out-of-bound
-
-    Time complexity:  O(N^2)    # as we loop using two loops
-    Space complexity: O(N)      # space used by output array,in worst case we 
-                                # may have all elements in the output
-    """
     output = []
 
     # Sorting the array
