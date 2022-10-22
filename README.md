@@ -12,6 +12,11 @@
   <hr>
 </div>
 
+- <b>Drills</b>
+  * [Who likes it?](https://github.com/cheenathana/the_algorithms/blob/main/drills/6kyu_who_likes_it.py)
+  *
+
+
 - <b>ARRAY</b>
   - [x] [Two number sum](https://github.com/cheenathana/the_algorithms/tree/main/two_number_sum)
   - [x] [Three number sum](https://github.com/cheenathana/the_algorithms/tree/main/three_number_sum)
