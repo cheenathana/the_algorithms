@@ -13,6 +13,8 @@ like an item. It must return the display text as shown in the examples:
 ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 
 Note: For 4 or more names, the number in "and 2 others" simply increases.
+
+CATEGORY: STRINGS | FUNDAMENTALS
 """
 def likes(names):
     if not names:

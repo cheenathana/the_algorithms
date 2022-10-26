@@ -10,6 +10,8 @@ longest(a, b) -> "abcdefklmopqwxy"
 
 a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+
+CATEGORY: FUNDAMENTALS
 """
 def longest(a1, a2):
     return "".join(sorted(set(a1) | (set(a2))))
