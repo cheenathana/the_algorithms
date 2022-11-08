@@ -3,6 +3,7 @@ class BankAccount:
     accounts = []
 
     def __init__(self, balance=0):
+        self._balance = 0
         self.deposit(balance)
         self._create_account()
 
